@@ -1,0 +1,279 @@
+body {
+    background-color: #0f0d0e;
+    margin: 0; 
+    padding: 0; 
+   
+}
+
+h1 {
+    font-family: 'Paytone One', sans-serif;
+    margin-top: 15%;
+    font-size: 70px;
+  color: #f9f4da;
+    font-weight: 900;
+    font-size: 4.5rem;
+    line-height: 1;   
+}
+
+
+
+h2{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: #f4e288;
+}
+h3{
+    font-size: 3.75rem;
+    line-height: 1;
+    color: #f9f4da;
+    top: 70px;
+}
+h4{
+    color: #f9f4da;
+}
+.quote{
+    color: #f9f4da;
+    max-width: 300px; /* Adjust the max-width as needed */
+    margin-top: 20px; /* Adjust the top margin as needed */
+    position: absolute;
+    right: 0;
+    bottom: 320px;
+    font-family: cursive, sans-serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    text-align: center;
+    margin: 150px auto;
+   
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.content {
+    position: relative;
+    
+}
+
+
+h3, h4 {
+    margin: 0;
+}
+
+h3 {
+    font-size: 4em;
+    line-height: 1.2;
+    font-family:'Paytone One', sans-serif ;
+}
+
+h4 {
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin-top: 10px;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+p{
+ color: #f9f4da;   
+ font-size: 1.5rem;
+line-height: 2rem;
+text-wrap: pretty;
+max-width: 40ch;
+white-space: inherit;
+font-family: 'Outfit', sans-serif;
+
+}
+
+button{
+    color: black;
+    font-weight: 900;
+    border-radius: 40px;
+    font-size: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: rgb(252, 186, 40);
+    opacity: 1;
+    color: rgb(35 31 32/var(--tw-text-opacity))
+}
+
+.project-grid{
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; /* Adjust the gap as needed */
+}
+
+.project-item {
+    flex: 1 1 1 calc(30% - 20px);
+    margin: 30px;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    box-sizing: border-box; /* Added this line */
+    background-color:rgb(127, 188, 36);
+    height: 400px;
+    opacity: 1;
+}
+
+.green{
+ border-color: #0ba95b;
+}
+.green h5{
+    font-family: 'Paytone One', sans-serif;
+    font-weight: 700;
+    color: #0f0d0e;
+   font-display: uppercase;
+
+}
+.magenta{
+    background-color: #9d7dce;
+}
+.blue{
+    background-color: #12b5e5;
+}
+
+.yellowWhite{
+    background-color: #f9f4da;
+}
+.red{
+    background-color: #ed203d;
+}
+.orange{
+    background-color: #f99157;
+}
+
+
+
+
+
+:root {
+    --bg: black; 
+    --fg: #f4cd0df0; /* Change foreground color to white */
+    --primary: hsl(50, 94%, 49%); /* Change primary color to yellow */
+}
+
+.hourglass, .hourglass:before, .hourglass:after {
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.hourglass, .hourglass:before, .hourglass:after {
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+.hourglass {
+	--polygonH: polygon(0% 0%,100% 0%,100% 5.55%,95% 5.55%,95% 28%,60% 46%,60% 54%,95% 72%,95% 94.45%,100% 94.45%,100% 100%,0% 100%,0% 94.45%,5% 94.45%,5% 72%,40% 54%,40% 46%,5% 28%,5% 5.55%,0% 5.55%);
+	animation-name: flip;
+	animation-timing-function: ease-in-out;
+	background-image: linear-gradient(var(--primary) 0.5em,#f6ee1355 0.5em 8.5em,var(--primary) 8.5em);
+	clip-path: var(--polygonH);
+	-webkit-clip-path: var(--polygonH);
+	overflow: hidden;
+	position: relative;
+	width: 5rem;
+	height: 9em;
+	z-index: 0;
+    margin-top: 95px;
+  
+   
+}
+.hourglass:before, .hourglass:after {
+	animation-timing-function: linear;
+	content: "";
+	display: block;
+	position: absolute;
+}
+.hourglass:before {
+	--polygonB1: polygon(0% 0%,100% 0%,100% 24%,50% 47%,50% 47%,50% 47%,50% 47%,50% 47%,50% 47%,50% 47%,50% 47%,0% 24%);
+	--polygonB2: polygon(0% 4%,100% 4%,100% 24%,55% 45%,55% 100%,55% 100%,55% 100%,45% 100%,45% 100%,45% 100%,45% 45%,0% 24%);
+	--polygonB3: polygon(0% 24%,100% 24%,100% 24%,55% 45%,55% 80%,100% 100%,100% 100%,0% 100%,0% 100%,45% 80%,45% 45%,0% 24%);
+	--polygonB4: polygon(45% 45%,55% 45%,55% 45%,55% 45%,55% 58%,100% 76%,100% 100%,0% 100%,0% 76%,45% 58%,45% 45%,45% 45%);
+	--polygonB5: polygon(50% 53%,50% 53%,50% 53%,50% 53%,50% 53%,100% 76%,100% 100%,0% 100%,0% 76%,50% 53%,50% 53%,50% 53%);
+	animation-name: fill;
+	background-color: var(--fg);
+	background-size: 100% 3.6em;
+	clip-path: var(--polygonB1);
+	-webkit-clip-path: var(--polygonB1);
+	top: 0.5em;
+	left: 0.5em;
+	width: 4em;
+	height: 8em;
+	z-index: 1;
+}
+.hourglass:after {
+	animation-name: glare;
+	background:
+		linear-gradient(90deg,#0000 0.5em,#0003 0.5em 1.5em,#0000 1.5em 3.5em,#fff3 3.5em 4.5em,#fff0 4.5em 6.5em,#0003 6.5em 7.5em,#0000 7.5em) 0 0 / 100% 0.5em,
+		linear-gradient(90deg,#0000 0.75em,#0003 0.75em 1.25em,#0000 1.25em 3.75em,#fff3 3.75em 4.25em,#fff0 4.25em 6.75em,#0003 6.75em 7.25em,#0000 7.25em) 0 0.5em / 100% 8em,
+		linear-gradient(90deg,#0000 0.5em,#0003 0.5em 1.5em,#0000 1.5em 3.5em,#fff3 3.5em 4.5em,#fff0 4.5em 6.5em,#0003 6.5em 7.5em,#0000 7.5em) 0 100% / 100% 0.5em;
+	background-repeat: repeat-x;
+	top: 0;
+	left: -3em;
+	width: 200%;
+	height: 100%;
+	z-index: 2;
+}
+/* Animations */
+@keyframes fill {
+	from {
+		clip-path: var(--polygonB1);
+		-webkit-clip-path: var(--polygonB1);
+	}
+	10% {
+		clip-path: var(--polygonB2);
+		-webkit-clip-path: var(--polygonB2);
+	}
+	45% {
+		clip-path: var(--polygonB3);
+		-webkit-clip-path: var(--polygonB3);
+	}
+	80% {
+		clip-path: var(--polygonB4);
+		-webkit-clip-path: var(--polygonB4);
+	}
+	85%, to {
+		clip-path: var(--polygonB5);
+		-webkit-clip-path: var(--polygonB5);
+	}
+}
+@keyframes glare {
+	from, 90% {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(3em);
+	}
+}
+@keyframes flip {
+	from, 90% {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(180deg);
+	}
+}
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #17181c;
+		--fg: #c7cad1;
+	}
+}
