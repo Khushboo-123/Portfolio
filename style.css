@@ -349,6 +349,7 @@ h5{
 body{
     margin: 0;
     max-width: 600px;
+   zoom : initial ;
 }
     .quote {
         display: none;
