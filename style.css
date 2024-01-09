@@ -42,7 +42,6 @@ h4{
     line-height: 1.25rem;
 
 
-
 }
 
 
@@ -112,6 +111,14 @@ p.desc{
     text-wrap: pretty;
 }
 
+.internp{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+
 button{
     color: black;
     font-weight: 900;
@@ -155,6 +162,7 @@ h5{
    font-display: uppercase;
    font-size: 20px;
    top: 0px;
+   text-transform: uppercase;
 }
 
 .magenta{
