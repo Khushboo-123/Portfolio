@@ -7,7 +7,7 @@ body {
 h1 {
     font-family: 'Paytone One', sans-serif;
     margin-top: 15%;
-    font-size: 70px;
+   
   color: #f9f4da;
     font-weight: 900;
     font-size: 4.5rem;
@@ -117,8 +117,45 @@ p.desc{
     font-weight: 500;
     margin-bottom: 0px;
 }
+.socials{
+    display: flex;
+    
+}
+
+.socials li{
+    width: 60px;
+    margin-right: 250px;
+}
+.socials li a {
+    
+    color: #f9f4da;
+    text-decoration: none;
+    list-style-type: none;
+    border-radius: 50%;
+    font-size: 30px;
+
+}
+
+.resume{
+    margin-top: 100px;
+}
+.resume a{
+    background-color: pink;
+    padding: 20px;
+    color: black;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px;
+    position: relative;
+}
 
 
+
+footer h3{
+    margin: 0 auto;
+    color:#f9f4da;
+}
 button{
     color: black;
     font-weight: 900;
@@ -163,6 +200,10 @@ h5{
    font-size: 20px;
    top: 0px;
    text-transform: uppercase;
+}
+
+.project-grid{
+    margin-top: 50px;
 }
 
 .magenta{
@@ -297,4 +338,64 @@ h5{
 		--bg: #17181c;
 		--fg: #c7cad1;
 	}
+}
+
+@media (max-width: 768px) {
+    h1 {
+        margin-top: 10%;
+        font-size: 82px;
+    }
+
+body{
+    margin: 0;
+    max-width: 600px;
+}
+    .quote {
+        display: none;
+    }
+
+    .container, .container2 {
+        margin: 10px;
+        max-width: 600px;
+    }
+
+  
+    footer h3{
+        display: none;
+    }
+    .socials{
+        display: grid;
+        
+    }
+    
+    .socials li{
+        width: 60px;
+        margin-right: 250px;
+    }
+    .socials li a {
+        
+        color: #f9f4da;
+        
+      list-style-type: circle;
+        border-radius: 50%;
+        font-size: 25px;
+    
+    }
+  .resume{
+    margin-top: 15px;
+  }
+    .resume a {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .project-item {
+        flex: 1 1 100%;
+        margin: 10px 0;
+        padding: 18px;
+       
+    }
+    .project-grid{
+        margin-top: 50px;
+    }
 }
