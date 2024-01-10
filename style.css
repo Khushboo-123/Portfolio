@@ -1,8 +1,10 @@
-body {
-    background-color: #0f0d0e;
-    
-   
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
 }
+
 
 h1 {
     font-family: 'Paytone One', sans-serif;
@@ -10,8 +12,9 @@ h1 {
    
   color: #f9f4da;
     font-weight: 900;
-    font-size: 4.5rem;
+    font-size: 9.5rem;
     line-height: 1;   
+    margin-left: -610px;
 }
 
 
@@ -20,6 +23,7 @@ h2{
     font-size: 1.875rem;
     line-height: 2.25rem;
     color: #f4e288;
+    margin-top: 48px;
 }
 h3{
     font-size: 3.75rem;
@@ -44,6 +48,10 @@ h4{
 
 }
 
+.hourglass{
+    margin-left: 83%;
+
+}
 
 
 .container2 {
@@ -117,25 +125,42 @@ p.desc{
     font-weight: 500;
     margin-bottom: 0px;
 }
-.socials{
+footer {
+    background-color: #333; /* Dark background color */
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
     display: flex;
-    
+    flex-direction: column;
+    align-items: center;
 }
 
-.socials li{
-    width: 60px;
-    margin-right: 250px;
+.socials {
+    display: flex;
+    justify-content: center;
 }
+
+.socials li {
+    list-style: none;
+    margin: 10px 19px; /* Adjust spacing between social icons */
+
+}
+
 .socials li a {
+    display: block;
+    width: 40px; /* Adjust icon width */
+    height: 40px; /* Adjust icon height */
     
-    color: #f9f4da;
+    border-radius: 50%; /* Make icons circular */
+    text-align: center;
+    line-height: 40px; /* Center the icon vertically */
+    font-size: 18px; /* Adjust icon size */
+    color: whitesmoke;
     text-decoration: none;
-    list-style-type: none;
-    border-radius: 50%;
-    font-size: 30px;
-
+    
 }
-
 .resume{
     margin-top: 100px;
 }
@@ -253,7 +278,7 @@ h5{
 	width: 5rem;
 	height: 9em;
 	z-index: 0;
-    margin-top: 95px;
+    margin-top: -310px;
   
    
 }
@@ -332,71 +357,324 @@ h5{
 		transform: rotate(180deg);
 	}
 }
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-	:root {
-		--bg: #17181c;
-		--fg: #c7cad1;
-	}
-}
+ 
+@media (max-width : 500px) {
 
-@media (max-width: 768px) {
-    h1 {
-        margin-top: 10%;
-        font-size: 82px;
-    }
-
-body{
-    margin: 0;
-    max-width: 600px;
-   zoom : initial ;
-}
-    .quote {
-        display: none;
-    }
-
-    .container, .container2 {
-        margin: 10px;
-        max-width: 600px;
-    }
-
-  
-    footer h3{
-        display: none;
-    }
-    .socials{
-        display: grid;
-        
-    }
-    
-    .socials li{
-        width: 60px;
-        margin-right: 250px;
-    }
-    .socials li a {
-        
-        color: #f9f4da;
-        
-      list-style-type: circle;
-        border-radius: 50%;
-        font-size: 25px;
-    
-    }
-  .resume{
-    margin-top: 15px;
-  }
-    .resume a {
-        padding: 10px;
-        font-size: 18px;
-    }
-
-    .project-item {
-        flex: 1 1 100%;
-        margin: 10px 0;
-        padding: 18px;
+    body{
+        width: 500px;
        
+            overflow-x: hidden;
+    
+
+    }
+    .container{
+        display: block;
+    }
+    .container2{
+        display: block;
+        justify-content: flex-start;
+    }
+    .container2 h3,
+    .container2 h4 {
+        text-align: left;
+        font-size: 22px;
+        margin-left: 15px;
+    }
+    .content h1{
+        margin-top: 2px;
+    }
+
+    .hourglass {
+        width: 3rem; /* Adjust the width as needed for smaller screens */
+        height: 6rem; /* Adjust the height as needed for smaller screens */
+        margin-left: -367px;
+        margin-top: 68px;
+    }
+
+    .quote {
+        font-size: 1.2rem; /* Adjust the font size for smaller screens */
+        
+        line-height: 1.5rem;
+        
+    }
+
+    .container2 h4{
+        font-size: 20px;
+        width: 400px;
+    }
+    .container2 h3{
+        font-size: 26px;
+        margin-top: 27px;
+    }
+    .container2 {
+        margin: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align children to the start (left) */
+    }
+    .container h3{
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .resume{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .resume a{
+        background-color: pink;
+        padding: 10px;
+        color: black;
+        border-radius: 15px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 15px;
+        position: relative;
+      
+    }
+    
+
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   
+   /* Footer Styles */
+footer {
+    background-color: #333; /* Dark background color */
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container h3{
+    margin-top: 0;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials li {
+    list-style: none;
+    margin: 10px 19px; /* Adjust spacing between social icons */
+
+}
+
+.socials li a {
+    display: block;
+    width: 40px; /* Adjust icon width */
+    height: 40px; /* Adjust icon height */
+    
+    border-radius: 50%; /* Make icons circular */
+    text-align: center;
+    line-height: 40px; /* Center the icon vertically */
+    font-size: 18px; /* Adjust icon size */
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+
+
+
+    .inline-block {
+        max-width: 100%; /* Ensure image is responsive */
+        height: auto;
+        width: 350px;
     }
     .project-grid{
-        margin-top: 50px;
+        display: grid;
+        flex-wrap: wrap;
+       
+        grid-template-columns: repeat(1, 1fr);
+        gap: 01px; /* Adjust the gap as needed */
     }
+    
+    .project-item {
+        margin-top: 5px;
+        flex: 1 1 1 calc(2% - 2px);
+    display: block;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        box-sizing: border-box; /* Added this line */
+        height: 400px;
+        opacity: 1;
+        position: relative;
+        width: 400px;
+    }
+    
+
+    
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+   
+
+    body{
+        width: 767px;
+       
+            overflow-x: hidden;
+    
+
+    }
+    .container{
+        display: block;
+    }
+    .container2{
+        display: block;
+        justify-content: flex-start;
+    }
+    .container2 h3,
+    .container2 h4 {
+        text-align: left;
+        font-size: 22px;
+        margin-left: 15px;
+
+    }
+    .content h1{
+        margin-top: 2px;
+        font-size: 100px;
+        margin-left:-150px;
+    }
+    #internp{
+        width: 600px;
+    }
+    
+
+    .hourglass {
+        width: 5rem; /* Adjust the width as needed for smaller screens */
+        height: 8rem; /* Adjust the height as needed for smaller screens */
+        margin-left: -367px;
+        margin-top: 60px;
+    }
+
+    .quote {
+        font-size: 1.5rem; /* Adjust the font size for smaller screens */
+        
+        line-height: 1.9rem;
+        top: 300px;
+    }
+
+    .container2 h4{
+        font-size: 20px;
+        width: 400px;
+    }
+    .container2 h3{
+        font-size: 61px;
+        margin-top: 27px;
+    }
+    .container2 {
+        margin: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align children to the start (left) */
+    }
+    .container h3{
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .resume{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .resume a{
+        background-color: pink;
+        padding: 10px;
+        color: black;
+        border-radius: 15px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 15px;
+        position: relative;
+      
+    }
+    
+
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   
+   /* Footer Styles */
+footer {
+    background-color: #333; /* Dark background color */
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container h3{
+    margin-top: 0;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials li {
+    list-style: none;
+    margin: 10px 19px; /* Adjust spacing between social icons */
+
+}
+
+.socials li a {
+    display: block;
+    width: 40px; /* Adjust icon width */
+    height: 40px; /* Adjust icon height */
+    
+    border-radius: 50%; /* Make icons circular */
+    text-align: center;
+    line-height: 40px; /* Center the icon vertically */
+    font-size: 18px; /* Adjust icon size */
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+
+
+
+    .inline-block {
+        max-width: 100%; /* Ensure image is responsive */
+        height: auto;
+        width: 350px;
+    }
+    .project-grid{
+        display: grid;
+        flex-wrap: wrap;
+       
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1px; /* Adjust the gap as needed */
+        margin-left: 64px;
+    }
+    
+    .project-item {
+        margin-top: 5px;
+        flex: 1 1 1 calc(2% - 2px);
+    display: block;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        box-sizing: border-box; /* Added this line */
+        height: 400px;
+        opacity: 1;
+        position: relative;
+        width: 400px;
+    }
+    
+
+    
 }
